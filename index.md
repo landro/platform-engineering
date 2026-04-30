@@ -69,3 +69,10 @@ Tools are multipliers, but only when the right culture and clear processes alrea
 **12. Define and honour the platform contract.**
 The platform's job is to absorb operational complexity so that developers need not manage it themselves. In return, developers who stay within the contract receive its guarantees. Make this deal explicit — through service level objectives, documented ownership boundaries, and a published process for stepping off the path.
 [→ 20 examples](examples/12-define-and-honour-the-platform-contract.md)
+
+---
+
+## Practical Checklist
+
+A 10-point checklist for platform engineers to validate before shipping a new feature.
+[→ New Feature Checklist](checklist.md)
