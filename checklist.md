@@ -39,6 +39,12 @@ title: "New Feature Checklist for Platform Engineers"
 10. **Is a deprecation or rollback path defined?**
     Every feature has a lifecycle. Document how this feature will be retired or replaced, and ensure a rollback procedure exists if the feature needs to be withdrawn quickly. *(Principle 8)*
 
+11. **Is this feature treated as part of a living product, with feedback loops in place?**
+    Confirm there is a way for users to report issues, request changes, and see what is on the roadmap. Update the changelog and communicate the change through the channels developers already use. *(Principle 2)*
+
+12. **Have the people, process, and team ownership implications been addressed?**
+    Identify who owns the feature long-term, how it will be supported, and what enablement (documentation, training, office hours) is needed so the tooling is amplified by clear process and culture rather than relying on the tool alone. *(Principle 11)*
+
 ---
 
 *For guidance on each principle, see the [full manifesto]({{ '/' | relative_url }}).*
