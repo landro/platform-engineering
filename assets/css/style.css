@@ -172,12 +172,6 @@ a:hover { text-decoration: underline; }
   margin-bottom: .75rem;
 }
 
-.values-disclaimer {
-  color: rgba(255,255,255,.45);
-  font-size: .8rem;
-  margin-top: 1rem;
-}
-
 /* ── Values grid ──────────────────────────────────────────── */
 .values-grid {
   display: grid;

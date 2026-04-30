@@ -31,7 +31,6 @@ title: The Platform Engineering Manifesto
         <div class="value-right">over ticket-driven operations</div>
       </div>
     </div>
-    <p class="values-disclaimer"><em>While there is value in the items on the right, we value the items on the left more.</em></p>
   </div>
 </section>
 
