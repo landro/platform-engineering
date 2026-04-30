@@ -181,7 +181,7 @@ a:hover { text-decoration: underline; }
 /* ── Values grid ──────────────────────────────────────────── */
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: rgba(255,255,255,.12);
   border: 1px solid rgba(255,255,255,.12);
