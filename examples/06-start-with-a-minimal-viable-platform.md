@@ -1,3 +1,8 @@
+---
+layout: principle
+title: "Principle 6: Start with a minimal viable platform"
+---
+
 # Principle 6: Start with a minimal viable platform
 
 > Ship the thinnest platform that delivers real value to real teams, then iterate. A working golden path for one use case beats a comprehensive platform that is six months from release. Validate with actual users before building the next layer.
