@@ -10,40 +10,40 @@ title: "New Feature Checklist for Platform Engineers"
 ---
 
 1. **Does this feature make the right thing the easy thing?**
-   The golden path for this feature should guide users towards safe, reliable outcomes by default. There must be an escape hatch for teams with legitimate reasons to diverge. *(Principle 1)*
+   The golden path for this feature should guide users towards safe, reliable outcomes by default. There must be an escape hatch for teams with legitimate reasons to diverge.
 
-2. **Has this feature been validated with real users before it ships?**
-   Show a working prototype or minimal version to at least one consuming team before the full build. Avoid building in isolation. *(Principle 6)*
+2. **Is this feature treated as part of a living product, with feedback loops in place?**
+   Confirm there is a way for users to report issues, request changes, and see what is on the roadmap. Update the changelog and communicate the change through the channels developers already use.
 
-3. **Have you adopted an existing tool or standard before writing bespoke code?**
-   Check the platform engineering community, CNCF landscape, and internal tooling catalogue first. Build only where genuine differentiation is required. *(Principle 7)*
+3. **Are success metrics defined and observable from day one?**
+   Instrument the feature before release. Define what good looks like — adoption rate, lead time impact, error rate — and ensure dashboards or alerts exist to surface it.
 
 4. **Is everything that makes this feature work managed as code?**
-   Infrastructure, pipelines, configuration, policies, and golden path templates must be in version control — reviewable, testable, and repeatable. *(Principle 4)*
+   Infrastructure, pipelines, configuration, policies, and golden path templates must be in version control — reviewable, testable, and repeatable.
 
 5. **Is this feature right-sized for the current organisational need?**
-   Avoid over-engineering for a future organisation. Validate that the complexity introduced is proportionate to the problem being solved today. *(Principle 5)*
+   Avoid over-engineering for a future organisation. Validate that the complexity introduced is proportionate to the problem being solved today.
 
-6. **Are success metrics defined and observable from day one?**
-   Instrument the feature before release. Define what good looks like — adoption rate, lead time impact, error rate — and ensure dashboards or alerts exist to surface it. *(Principle 3)*
+6. **Has this feature been validated with real users before it ships?**
+   Show a working prototype or minimal version to at least one consuming team before the full build. Avoid building in isolation.
 
-7. **Does the feature rest on a solid foundation?**
-   Confirm that the underlying capabilities (reliability, security, secrets management, networking) are stable before adding a new interface on top. *(Principle 9)*
+7. **Have you adopted an existing tool or standard before writing bespoke code?**
+   Check the platform engineering community, CNCF landscape, and internal tooling catalogue first. Build only where genuine differentiation is required.
 
-8. **Is the developer experience considered as part of the feature, not as a follow-up?**
-   Review documentation, onboarding steps, error messages, and CLI or portal ergonomics before shipping. If a developer cannot discover and use the feature unaided, it is not done. *(Principle 10)*
+8. **Is a deprecation or rollback path defined?**
+   Every feature has a lifecycle. Document how this feature will be retired or replaced, and ensure a rollback procedure exists if the feature needs to be withdrawn quickly.
 
-9. **Does this feature respect and update the platform contract?**
-   If the feature changes what the platform provides or requires, update the SLOs, ownership boundaries, and documented responsibilities. Communicate the change to consuming teams before it lands. *(Principle 12)*
+9. **Does the feature rest on a solid foundation?**
+   Confirm that the underlying capabilities (reliability, security, secrets management, networking) are stable before adding a new interface on top.
 
-10. **Is a deprecation or rollback path defined?**
-    Every feature has a lifecycle. Document how this feature will be retired or replaced, and ensure a rollback procedure exists if the feature needs to be withdrawn quickly. *(Principle 8)*
+10. **Is the developer experience considered as part of the feature, not as a follow-up?**
+    Review documentation, onboarding steps, error messages, and CLI or portal ergonomics before shipping. If a developer cannot discover and use the feature unaided, it is not done.
 
-11. **Is this feature treated as part of a living product, with feedback loops in place?**
-    Confirm there is a way for users to report issues, request changes, and see what is on the roadmap. Update the changelog and communicate the change through the channels developers already use. *(Principle 2)*
+11. **Have the people, process, and team ownership implications been addressed?**
+    Identify who owns the feature long-term, how it will be supported, and what enablement (documentation, training, office hours) is needed so the tooling is amplified by clear process and culture rather than relying on the tool alone.
 
-12. **Have the people, process, and team ownership implications been addressed?**
-    Identify who owns the feature long-term, how it will be supported, and what enablement (documentation, training, office hours) is needed so the tooling is amplified by clear process and culture rather than relying on the tool alone. *(Principle 11)*
+12. **Does this feature respect and update the platform contract?**
+    If the feature changes what the platform provides or requires, update the SLOs, ownership boundaries, and documented responsibilities. Communicate the change to consuming teams before it lands.
 
 ---
 
