@@ -1,7 +1,7 @@
 title: "The Platform Engineering Manifesto"
 description: "Principles and practices for building and operating exceptional internal developer platforms"
-baseurl: "/platform-engineering"
-url: "https://landro.github.io"
+baseurl: ""
+url: ""
 
 permalink: pretty
 
