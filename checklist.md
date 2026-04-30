@@ -1,6 +1,11 @@
+---
+layout: principle
+title: "New Feature Checklist for Platform Engineers"
+---
+
 # New Feature Checklist for Platform Engineers
 
-Use this checklist when working on any new platform feature. It is grounded in the [Platform Engineering Manifesto](index.md) and is designed to be reviewed before shipping, not after.
+> Use this checklist when working on any new platform feature. It is grounded in the [Platform Engineering Manifesto]({{ '/' | relative_url }}) and is designed to be reviewed before shipping, not after.
 
 ---
 
@@ -36,4 +41,4 @@ Use this checklist when working on any new platform feature. It is grounded in t
 
 ---
 
-*For guidance on each principle, see the [full manifesto](index.md).*
+*For guidance on each principle, see the [full manifesto]({{ '/' | relative_url }}).*
