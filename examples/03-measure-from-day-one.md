@@ -1,3 +1,8 @@
+---
+layout: principle
+title: "Principle 3: Measure from day one"
+---
+
 # Principle 3: Measure from day one
 
 > Technical sophistication without adoption delivers nothing. Track adoption, lead time, change failure rate, and developer sentiment from the start. Feedback loops and telemetry are not afterthoughts — they are how platforms improve.

@@ -1,3 +1,8 @@
+---
+layout: principle
+title: "Principle 7: Adopt before you build"
+---
+
 # Principle 7: Adopt before you build
 
 > Apply established patterns, open standards, and proven tools before writing bespoke solutions. The platform engineering community has solved most foundational problems. Build only where genuine differentiation is needed — and retire what no longer serves.

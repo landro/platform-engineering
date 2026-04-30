@@ -1,3 +1,8 @@
+---
+layout: principle
+title: "Principle 9: Build the foundation before the portal"
+---
+
 # Principle 9: Build the foundation before the portal
 
 > A portal built on a broken foundation will be abandoned. Invest in capabilities, reliability, and contracts first — the interface amplifies what is already there; it cannot substitute for what is not.

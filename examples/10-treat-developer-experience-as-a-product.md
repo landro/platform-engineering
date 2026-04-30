@@ -1,3 +1,8 @@
+---
+layout: principle
+title: "Principle 10: Treat developer experience as a product in its own right"
+---
+
 # Principle 10: Treat developer experience as a product in its own right
 
 > The platform's interface — documentation, onboarding, error messages, and CLI ergonomics — is as important as its capabilities. A powerful platform that is hard to discover or understand will be abandoned for something simpler. Developer experience is not polish; it is the product.

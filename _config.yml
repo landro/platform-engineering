@@ -1,0 +1,24 @@
+title: "The Platform Engineering Manifesto"
+description: "Principles and practices for building and operating exceptional internal developer platforms"
+baseurl: ""
+url: ""
+
+permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "home"
+  - scope:
+      path: "examples"
+      type: "pages"
+    values:
+      layout: "principle"
+
