@@ -398,7 +398,7 @@ a:hover { text-decoration: underline; }
   counter-reset: examples;
   display: flex;
   flex-direction: column;
-  gap: .85rem;
+  gap: 1.25rem;
 }
 
 .principle-content ol li {
