@@ -110,6 +110,12 @@ a:hover { text-decoration: underline; }
 }
 .nav-link:hover { color: #fff; text-decoration: none; }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
 /* ── Hero section ─────────────────────────────────────────── */
 .hero {
   background: linear-gradient(135deg, var(--color-hero-from) 0%, var(--color-hero-to) 100%);

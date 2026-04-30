@@ -126,11 +126,3 @@ title: The Platform Engineering Manifesto
     </div>
   </div>
 </section>
-
-<section class="checklist-section">
-  <div class="container">
-    <h2 class="section-heading">Practical Checklist</h2>
-    <p>A 10-point checklist for platform engineers to validate before shipping a new feature.</p>
-    <a href="checklist" class="checklist-link">→ New Feature Checklist</a>
-  </div>
-</section>
