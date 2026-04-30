@@ -1,3 +1,8 @@
+---
+layout: principle
+title: "Principle 1: Make the right thing the easy thing — not the only thing"
+---
+
 # Principle 1: Make the right thing the easy thing — not the only thing
 
 > Every platform decision should answer: does this help developers focus on delivering business value, or does it add friction they must carry? Golden paths guide developers towards safe, reliable outcomes — with security and compliance built in by design, invisible rather than adversarial. They must always include escape hatches: teams that need to diverge responsibly should be supported, not punished.

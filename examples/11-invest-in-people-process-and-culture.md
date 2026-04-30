@@ -1,3 +1,8 @@
+---
+layout: principle
+title: "Principle 11: Invest in people, process, and culture — amplified by tools"
+---
+
 # Principle 11: Invest in people, process, and culture — amplified by tools
 
 > Tools are multipliers, but only when the right culture and clear processes already exist. No tool compensates for a lack of product thinking or stakeholder trust. Your platform's boundaries will reflect your organisational structure whether you plan it or not — treat team topology and platform scope as a single design decision.

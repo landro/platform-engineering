@@ -1,3 +1,8 @@
+---
+layout: principle
+title: "Principle 4: Manage everything as code"
+---
+
 # Principle 4: Manage everything as code
 
 > Infrastructure, pipelines, security policies, and golden path configurations belong in version control — testable, reviewable, and repeatable. Code is the source of truth until the abstraction leaks; when it does, the gap between declared and actual state is a risk that must be managed.

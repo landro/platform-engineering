@@ -1,3 +1,8 @@
+---
+layout: principle
+title: "Principle 8: Deprecate gracefully"
+---
+
 # Principle 8: Deprecate gracefully
 
 > Platforms that only add capabilities ossify. Every tool, API, and integration has a lifecycle — and retiring things gracefully is as important as introducing them. A published deprecation policy prevents the platform from becoming a museum.

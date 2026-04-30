@@ -1,3 +1,8 @@
+---
+layout: principle
+title: "Principle 5: Right-size your platform"
+---
+
 # Principle 5: Right-size your platform
 
 > Match complexity to organisational need. A simple pipeline platform is as valid as a fully-orchestrated internal developer platform. Build for the problem you have today, not the organisation you may one day become.

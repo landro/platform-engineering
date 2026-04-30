@@ -1,3 +1,8 @@
+---
+layout: principle
+title: "Principle 12: Define and honour the platform contract"
+---
+
 # Principle 12: Define and honour the platform contract
 
 > The platform's job is to absorb operational complexity so that developers need not manage it themselves. In return, developers who stay within the contract receive its guarantees. Make this deal explicit — through service level objectives, documented ownership boundaries, and a published process for stepping off the path.

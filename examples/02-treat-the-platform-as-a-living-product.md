@@ -1,3 +1,8 @@
+---
+layout: principle
+title: "Principle 2: Treat the internal developer platform as a living product"
+---
+
 # Principle 2: Treat the internal developer platform as a living product
 
 > Platforms have no delivery date. They have users, roadmaps, feedback loops, and product lifecycles — and they must continuously evolve to remain useful. The platform team must continuously communicate value, build stakeholder buy-in, and demonstrate impact — or the platform will be unused, deprecated, or made mandatory by force, each a failure mode.
