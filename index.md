@@ -8,7 +8,7 @@ title: The Platform Engineering Manifesto
     <div class="hero-eyebrow">⚙ Platform Engineering</div>
     <h1>The Platform Engineering Manifesto</h1>
     <p class="hero-subtitle">Inspired by the Agile Manifesto, we are uncovering better ways of building and operating internal developer platforms — by doing it and helping others do the same.</p>
-    <p style="color:rgba(255,255,255,.6);font-size:.9rem;margin-bottom:.75rem;">Through this work we have come to value:</p>
+    <p class="values-intro">Through this work we have come to value:</p>
     <div class="values-grid">
       <div class="value-item">
         <div class="value-over">we value</div>
@@ -31,7 +31,7 @@ title: The Platform Engineering Manifesto
         <div class="value-right">over ticket-driven operations</div>
       </div>
     </div>
-    <p style="color:rgba(255,255,255,.45);font-size:.8rem;margin-top:1rem;"><em>While there is value in the items on the right, we value the items on the left more.</em></p>
+    <p class="values-disclaimer"><em>While there is value in the items on the right, we value the items on the left more.</em></p>
   </div>
 </section>
 
