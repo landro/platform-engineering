@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="site-header">
     <div class="container">
-      <nav class="site-nav">
-        <a href="{{ '/' | relative_url }}" class="site-logo">
-          <span class="logo-icon">⚙</span>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="Platform Engineering Manifesto — Home">
+          <span class="logo-icon" aria-hidden="true">⚙</span>
           <span class="logo-text">Platform Engineering Manifesto</span>
         </a>
         <div class="nav-links">
@@ -29,7 +30,7 @@
     </div>
   </header>
 
-  <main class="site-content">
+  <main id="main-content" class="site-content">
     {{ content }}
   </main>
 
