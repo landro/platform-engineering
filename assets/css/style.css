@@ -534,6 +534,8 @@ button:focus-visible {
   margin-bottom: 1.25rem;
 }
 
+.principle-content > p a { text-decoration: underline; }
+
 .principle-content code {
   font-family: var(--font-mono);
   font-size: .85em;
@@ -558,9 +560,9 @@ button:focus-visible {
 
 .site-footer a {
   color: rgba(255,255,255,.9);
-  text-decoration: none;
+  text-decoration: underline;
 }
-.site-footer a:hover { color: #fff; text-decoration: underline; }
+.site-footer a:hover { color: #fff; }
 
 /* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 640px) {
