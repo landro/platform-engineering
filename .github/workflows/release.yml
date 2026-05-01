@@ -1,0 +1,41 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version tag (e.g. v2.0)'
+        required: true
+        type: string
+      year:
+        description: 'Revision year (e.g. 2026)'
+        required: true
+        type: string
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Create annotated tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "${{ inputs.version }}" \
+            -m "Platform Engineering Manifesto — ${{ inputs.year }} Annual Revision"
+          git push origin "${{ inputs.version }}"
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${{ inputs.version }}" \
+            --title "Platform Engineering Manifesto ${{ inputs.version }} — ${{ inputs.year }} Annual Revision" \
+            --notes "Annual revision of the Platform Engineering Manifesto. See the published site for the full content."
