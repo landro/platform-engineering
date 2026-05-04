@@ -9,7 +9,7 @@ title: "Principle 4: Manage everything as code"
 
 ## 20 Practical Examples
 
-1. **Store all Terraform in a monorepo** — Keep every infrastructure module, environment configuration, and variable file in a single versioned repository so infrastructure changes follow the same PR review process as application code.
+1. **Store Terraform in dedicated, purpose-scoped repositories** — Give each platform capability or service domain its own versioned repository for infrastructure modules, environment configuration, and variable files. Dedicated repositories keep ownership clear, limit blast radius, and allow teams to release infrastructure changes independently rather than serialising through a single monorepo pipeline.
 
 2. **Version-control Kubernetes manifests with GitOps** — Use Argo CD or Flux to reconcile cluster state from a Git repository so that the only way to change production is through a reviewed and merged pull request.
 
