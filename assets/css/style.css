@@ -461,6 +461,31 @@ button:focus-visible {
   box-shadow: var(--shadow-md);
 }
 
+.example-anchor {
+  margin-left: auto;
+  align-self: flex-start;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: .2rem;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  opacity: 0;
+  transition: opacity .15s, color .15s;
+  text-decoration: none;
+}
+
+.principle-content ol li:hover .example-anchor,
+.example-anchor:focus {
+  opacity: 1;
+}
+
+.example-anchor:hover,
+.example-anchor:focus {
+  color: var(--color-accent-dark);
+  text-decoration: none;
+}
+
 .principle-content strong { color: var(--color-primary); font-weight: 600; }
 
 .principle-content ul {
