@@ -9,20 +9,18 @@ layout: default
     </a>
     <article class="principle-content">
       {{ content }}
+      {% if page.examples %}
+      <ol>
+        {% for example in page.examples %}
+        <li id="example-{{ forloop.index }}">
+          <strong>{{ example.title }}</strong> &mdash; {{ example.body | markdownify | remove: '<p>' | remove: '</p>' | strip }}
+          <a href="#example-{{ forloop.index }}" class="example-anchor" aria-label="Permalink to example {{ forloop.index }}">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </a>
+        </li>
+        {% endfor %}
+      </ol>
+      {% endif %}
     </article>
   </div>
 </div>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.principle-content ol li').forEach(function(li, i) {
-      var id = 'example-' + (i + 1);
-      li.id = id;
-      var anchor = document.createElement('a');
-      anchor.href = '#' + id;
-      anchor.className = 'example-anchor';
-      anchor.setAttribute('aria-label', 'Permalink to example ' + (i + 1));
-      anchor.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
-      li.appendChild(anchor);
-    });
-  });
-</script>
