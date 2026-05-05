@@ -10,8 +10,8 @@ For each annual revision of the manifesto, trigger the [Create Release](https://
 
 1. Go to **Actions → Create Release → Run workflow** (or click [here](https://github.com/landro/platform-engineering/actions/workflows/release.yml)).
 2. Fill in the two inputs:
-   - **Version tag** — e.g. `v2.0`
    - **Revision year** — e.g. `2026`
+   - **Revision month** — zero-padded, between `01` and `12` (e.g. `01` for January)
 3. Click **Run workflow**.
 
 The workflow will:
@@ -20,10 +20,10 @@ The workflow will:
 
 ### Version naming convention
 
-| Year | Tag    |
-|------|--------|
-| 2025 | v1.0   |
-| 2026 | v2.0   |
-| 2027 | v3.0   |
+Tags follow the `YYYY.MM` format — the four-digit year and two-digit zero-padded month of the revision.
 
-Increment the major version number by 1 for each annual revision.
+| Revision        | Tag      |
+|-----------------|----------|
+| January 2025    | 2025.01  |
+| January 2026    | 2026.01  |
+| January 2027    | 2027.01  |

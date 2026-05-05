@@ -6,6 +6,9 @@ title: The Platform Engineering Manifesto
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-eyebrow">⚙ Platform Engineering</div>
+    <a href="https://github.com/landro/platform-engineering/releases/latest" class="version-badge" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/github/v/release/landro/platform-engineering?label=version&color=4f8ef7" alt="Latest release version" />
+    </a>
     <h1>The Platform Engineering Manifesto</h1>
     <p class="hero-subtitle">Inspired by the Agile Manifesto, we are uncovering better ways of building and operating internal developer platforms — by doing it and helping others do the same.</p>
     <p class="values-intro">Through this work we have come to value:</p>

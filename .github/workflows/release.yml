@@ -3,12 +3,12 @@ name: Create Release
 on:
   workflow_dispatch:
     inputs:
-      version:
-        description: 'Version tag (e.g. v2.0)'
-        required: true
-        type: string
       year:
         description: 'Revision year (e.g. 2026)'
+        required: true
+        type: string
+      month:
+        description: 'Revision month, zero-padded (e.g. 01)'
         required: true
         type: string
 
@@ -24,18 +24,27 @@ jobs:
           ref: main
           fetch-depth: 0
 
+      - name: Derive version tag
+        id: version
+        run: |
+          if ! [[ "${{ inputs.month }}" =~ ^(0[1-9]|1[0-2])$ ]]; then
+            echo "::error::Month must be a zero-padded value between 01 and 12 (got '${{ inputs.month }}')"
+            exit 1
+          fi
+          echo "tag=${{ inputs.year }}.${{ inputs.month }}" >> "$GITHUB_OUTPUT"
+
       - name: Create annotated tag
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git tag -a "${{ inputs.version }}" \
-            -m "Platform Engineering Manifesto — ${{ inputs.year }} Annual Revision"
-          git push origin "${{ inputs.version }}"
+          git tag -a "${{ steps.version.outputs.tag }}" \
+            -m "Platform Engineering Manifesto — ${{ inputs.year }}.${{ inputs.month }} Revision"
+          git push origin "${{ steps.version.outputs.tag }}"
 
       - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "${{ inputs.version }}" \
-            --title "Platform Engineering Manifesto ${{ inputs.version }} — ${{ inputs.year }} Annual Revision" \
-            --notes "Annual revision of the Platform Engineering Manifesto. See the published site for the full content."
+          gh release create "${{ steps.version.outputs.tag }}" \
+            --title "Platform Engineering Manifesto ${{ steps.version.outputs.tag }}" \
+            --notes "Revision of the Platform Engineering Manifesto (${{ inputs.year }}.${{ inputs.month }}). See the published site for the full content."
