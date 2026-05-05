@@ -2,9 +2,9 @@
 
 A living manifesto of principles and practices for building and operating exceptional internal developer platforms. Published as a GitHub Pages site.
 
-## Annual Revision — Creating a Release
+## Creating a Release
 
-For each annual revision of the manifesto, trigger the [Create Release](https://github.com/landro/platform-engineering/actions/workflows/release.yml) workflow. It creates an annotated Git tag on `main` and publishes a matching GitHub Release automatically — no local tooling required.
+To publish a new revision of the manifesto, trigger the [Create Release](https://github.com/landro/platform-engineering/actions/workflows/release.yml) workflow. It creates an annotated Git tag on `main` and publishes a matching GitHub Release automatically — no local tooling required.
 
 ### Steps
 
@@ -20,10 +20,10 @@ The workflow will:
 
 ### Version naming convention
 
-Tags follow the `YYYY.MM` format — the four-digit year and two-digit zero-padded month of the revision.
+Tags follow the `YYYY.MM` format — the four-digit year and two-digit zero-padded month of the revision. Multiple revisions in the same month are not expected; if needed, append a suffix manually.
 
-| Revision        | Tag      |
-|-----------------|----------|
-| January 2025    | 2025.01  |
-| January 2026    | 2026.01  |
-| January 2027    | 2027.01  |
+| Revision          | Tag      |
+|-------------------|----------|
+| January 2025      | 2025.01  |
+| September 2025    | 2025.09  |
+| March 2026        | 2026.03  |
