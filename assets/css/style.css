@@ -662,6 +662,16 @@ button:focus-visible {
   color: var(--color-primary);
 }
 
+.search-result-parent {
+  display: block;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: .15rem;
+}
+
 .search-result-snippet {
   display: block;
   margin-top: .2rem;

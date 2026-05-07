@@ -12,3 +12,18 @@ layout: default
     </article>
   </div>
 </div>
+<script>
+  // Assign stable IDs to ordered-list items so search results can deep-link
+  // to a specific example via #example-N anchors. Only the first <ol> on the
+  // page is annotated, mirroring the search-index generator.
+  (function () {
+    var firstList = document.querySelector(".principle-content ol");
+    if (!firstList) return;
+    var items = firstList.children;
+    for (var j = 0; j < items.length; j++) {
+      if (items[j].tagName === "LI" && !items[j].id) {
+        items[j].id = "example-" + (j + 1);
+      }
+    }
+  })();
+</script>

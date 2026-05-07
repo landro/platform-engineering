@@ -110,9 +110,17 @@
     var html = "";
     for (var i = 0; i < matches.length; i++) {
       var e = matches[i].entry;
+      var parentHtml = "";
+      if (e.parent) {
+        parentHtml =
+          '<span class="search-result-parent">' +
+            escapeHtml(e.parent) +
+          '</span>';
+      }
       html +=
         '<li class="search-result">' +
           '<a href="' + escapeHtml(e.url) + '">' +
+            parentHtml +
             '<span class="search-result-title">' +
               highlightTitle(e.title || e.url, query) +
             '</span>' +
