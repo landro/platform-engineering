@@ -2,6 +2,40 @@
 
 A living manifesto of principles and practices for building and operating exceptional internal developer platforms. Published as a GitHub Pages site.
 
+## Running the Site Locally
+
+The site is built with [Jekyll](https://jekyllrb.com/) and served by GitHub Pages.
+
+### Prerequisites
+
+- [Ruby](https://www.ruby-lang.org/) (3.0 or newer)
+- [Bundler](https://bundler.io/) (`gem install bundler`) — only required if a `Gemfile` is present
+- [Jekyll](https://jekyllrb.com/) (`gem install jekyll`) — only required when not using Bundler
+
+### Serve locally
+
+From the repository root:
+
+```bash
+# With Bundler (recommended if a Gemfile exists)
+bundle exec jekyll serve
+
+# Or directly, if Jekyll is installed globally
+jekyll serve
+```
+
+Then open <http://localhost:4000> in your browser. Jekyll watches for file changes and rebuilds automatically; refresh the page to see edits.
+
+### Build the static site
+
+To produce the static output in `_site/` without serving it:
+
+```bash
+bundle exec jekyll build
+# or
+jekyll build
+```
+
 ## Creating a Release
 
 To publish a new revision of the manifesto, trigger the [Create Release](https://github.com/landro/platform-engineering/actions/workflows/release.yml) workflow. It creates an annotated Git tag on `main` and publishes a matching GitHub Release automatically — no local tooling required.
