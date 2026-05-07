@@ -17,6 +17,19 @@
           <span class="logo-text">Platform Engineering Manifesto</span>
         </a>
         <div class="nav-links">
+          <div id="site-search" class="site-search" data-index-url="{{ '/search.json' | relative_url }}">
+            <label for="site-search-input" class="visually-hidden">Search the manifesto</label>
+            <svg class="site-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input
+              id="site-search-input"
+              type="search"
+              class="site-search-input"
+              placeholder="Search principles…"
+              autocomplete="off"
+              aria-controls="site-search-results"
+              aria-expanded="false" />
+            <ul id="site-search-results" class="site-search-results" hidden></ul>
+          </div>
           <a href="{{ '/checklist' | relative_url }}" class="nav-link checklist-link">
             <svg height="20" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2h6a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><polyline points="9 14 11 16 15 12"/></svg>
             Checklist
@@ -40,5 +53,6 @@
       <p><a href="{{ '/' | relative_url }}">Home</a> &middot; <a href="https://github.com/landro/platform-engineering" target="_blank" rel="noopener">GitHub</a></p>
     </div>
   </footer>
+  <script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
 </body>
 </html>
