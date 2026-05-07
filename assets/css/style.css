@@ -704,9 +704,32 @@ button:focus-visible {
   .logo-text { display: none; }
   .principle-content ol li { flex-direction: column; gap: .5rem; }
   .principle-content ol li::before { width: 1.5rem; height: 1.5rem; }
-  .nav-links { gap: .65rem; }
-  .site-search-input { width: 8.5rem; }
-  .site-search-input:focus { width: 11rem; }
+  .site-nav {
+    height: auto;
+    min-height: 3.75rem;
+    padding-block: .5rem;
+    align-items: flex-start;
+  }
+  .nav-links {
+    gap: .65rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .site-search {
+    order: 3;
+    flex: 1 1 100%;
+  }
+  .site-search-input {
+    width: 100%;
+    min-width: 0;
+  }
+  .site-search-input:focus { width: 100%; }
+  .site-search-results {
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 60vh;
+  }
 }
 
 @media (max-width: 400px) {
