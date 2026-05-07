@@ -444,6 +444,9 @@ button:focus-visible {
   font-size: .925rem;
   line-height: 1.65;
   transition: border-color .15s, box-shadow .15s;
+  /* Offset hash-scrolling so #example-N targets are not hidden by the
+     sticky site header (3.75rem) when arriving via deep links. */
+  scroll-margin-top: 5rem;
 }
 
 .principle-content ol li::before {
