@@ -1,0 +1,42 @@
+---
+layout: null
+permalink: /search.json
+sitemap: false
+---
+{%- assign indexable = site.pages | where_exp: "p", "p.layout == 'principle'" -%}
+[
+  {
+    "title": {{ site.title | jsonify }},
+    "url": {{ '/' | relative_url | jsonify }},
+    "content": {{ site.description | jsonify }}
+  }{% for page in indexable %},
+  {
+    "title": {{ page.title | jsonify }},
+    "url": {{ page.url | relative_url | jsonify }},
+    "content": {{ page.content | strip_html | normalize_whitespace | jsonify }}
+  }
+  {%- assign ol_parts = page.content | split: '<ol>' -%}
+  {%- if ol_parts.size > 1 -%}
+    {%- assign list_inner = ol_parts[1] | split: '</ol>' | first -%}
+    {%- assign li_chunks = list_inner | split: '<li>' -%}
+    {%- assign example_index = 0 -%}
+    {%- for chunk in li_chunks -%}
+      {%- assign li_html = chunk | split: '</li>' | first -%}
+      {%- assign strong_parts = li_html | split: '<strong>' -%}
+      {%- if strong_parts.size > 1 -%}
+        {%- assign example_index = example_index | plus: 1 -%}
+        {%- assign title_html = strong_parts[1] | split: '</strong>' | first -%}
+        {%- assign anchor = '#example-' | append: example_index -%}
+        ,
+  {
+    "title": {{ title_html | strip_html | normalize_whitespace | jsonify }},
+    "url": {{ page.url | relative_url | append: anchor | jsonify }},
+    "content": {{ li_html | strip_html | normalize_whitespace | jsonify }},
+    "parent": {{ page.title | jsonify }},
+    "kind": "example"
+  }
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {% endfor %}
+]
