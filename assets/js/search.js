@@ -52,6 +52,17 @@
     return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   }
 
+  // Allow only same-site relative URLs (path or hash). Anything else
+  // — including javascript:, data:, vbscript:, or protocol-relative —
+  // is replaced with "#" so a malicious or malformed index entry can
+  // never produce a script-executing link.
+  function safeUrl(u) {
+    if (typeof u !== "string") return "#";
+    if (u.charAt(0) === "/" && u.charAt(1) !== "/") return u;
+    if (u.charAt(0) === "#") return u;
+    return "#";
+  }
+
   function buildSnippet(content, query) {
     if (!content) return "";
     var lower = content.toLowerCase();
@@ -119,7 +130,7 @@
       }
       html +=
         '<li class="search-result">' +
-          '<a href="' + escapeHtml(e.url) + '">' +
+          '<a href="' + escapeHtml(safeUrl(e.url)) + '">' +
             parentHtml +
             '<span class="search-result-title">' +
               highlightTitle(e.title || e.url, query) +
