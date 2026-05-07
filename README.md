@@ -9,19 +9,20 @@ The site is built with [Jekyll](https://jekyllrb.com/) and served by GitHub Page
 ### Prerequisites
 
 - [Ruby](https://www.ruby-lang.org/) (3.0 or newer)
-- [Bundler](https://bundler.io/) (`gem install bundler`) — only required if a `Gemfile` is present
-- [Jekyll](https://jekyllrb.com/) (`gem install jekyll`) — only required when not using Bundler
+- [Bundler](https://bundler.io/) (`gem install bundler`)
+
+### Install dependencies
+
+Project dependencies are pinned in the `Gemfile`. From the repository root:
+
+```bash
+bundle install
+```
 
 ### Serve locally
 
-From the repository root:
-
 ```bash
-# With Bundler (recommended if a Gemfile exists)
 bundle exec jekyll serve
-
-# Or directly, if Jekyll is installed globally
-jekyll serve
 ```
 
 Then open <http://localhost:4000> in your browser. Jekyll watches for file changes and rebuilds automatically; refresh the page to see edits.
@@ -32,8 +33,6 @@ To produce the static output in `_site/` without serving it:
 
 ```bash
 bundle exec jekyll build
-# or
-jekyll build
 ```
 
 ## Creating a Release
