@@ -28,7 +28,7 @@ Write all text, comments, and documentation in British English.
 - Review all JS against OWASP top-10 before considering a task complete
 
 ### Accessibility (Universal Design)
-- All HTML must meet WCAG 2.1 AA as a minimum
+- All HTML must meet WCAG 2.2 AA as a minimum
 - Use semantic elements (`<nav>`, `<main>`, `<article>`, etc.) and ARIA roles where needed
 - Ensure keyboard navigability, sufficient colour contrast, and meaningful alt text on images
 
