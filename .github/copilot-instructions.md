@@ -1,6 +1,6 @@
-# AGENTS.md
+# GitHub Copilot Instructions
 
-> **Maintenance:** This file is mirrored verbatim in `.github/copilot-instructions.md` (except this title). Whenever you modify anything here, you **must** update that file in the same commit to keep them identical. This applies to all agents.
+> **Maintenance:** This file is mirrored verbatim in `AGENTS.md` (except that file's title). Whenever you modify anything here, you **must** update that file in the same commit to keep them identical. This applies to all agents.
 
 ## Project Overview
 
