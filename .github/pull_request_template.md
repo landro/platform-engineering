@@ -18,9 +18,9 @@
 - [ ] Meaningful `alt` text added to all images
 
 ### Screenshots
-<!-- Required for any visual change. Do NOT commit screenshots to the repository. -->
-- [ ] Desktop viewport screenshot included below
-- [ ] Mobile viewport screenshot included below
+<!-- Screenshots are required for every PR. Do NOT commit screenshots to the repository. For non-visual changes (e.g. docs, config), tick the box and write "N/A – no visual change" in the relevant placeholder below. -->
+- [ ] Desktop viewport screenshot (or N/A justification) included below
+- [ ] Mobile viewport screenshot (or N/A justification) included below
 
 **Desktop**
 
